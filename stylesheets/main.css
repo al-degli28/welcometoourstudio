@@ -1,0 +1,309 @@
+/*******************************************GENERAL*************************/
+*{
+	box-sizing: border-box;
+	font-family: "Arial", sans-serif;
+}
+
+html, body{
+	overflow-x: hidden;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+main{
+	margin-top: 30px;
+	min-height: calc(100vh - 385px - 59px);
+}
+
+.active{
+	background: #09c391;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+
+img{
+	width: 30px;
+}
+
+
+
+
+
+
+/*******************************************HEADER***************************/
+header{
+	background: rgba(10, 206, 153, .7);
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+	height: 59px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+/*******************************************MENU DI NAVIGAZIONE*****************/
+
+nav{
+	padding: 10px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	padding: 5px 10px;
+	
+}
+
+/******************************************HERO BANNER****************************/
+#hero{
+	background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/1.jpg") no-repeat center / cover;
+	color: #fff;
+	padding: 70px 0 0 0;
+}
+
+#hero .hero-caption{
+	text-align: center;
+	padding: 140px 20px;
+}
+
+.btn{
+	background-color: orange;
+	padding: 15px 20px;
+	border-radius: 5px;
+	margin-top: 4px;
+	font-weight: bold;
+}
+
+.hero-caption h2{
+	margin-bottom: 50px;
+}
+
+/******************************************GALLERY********************************/
+#gallery{
+	padding: 15px 0 15px 0;
+}
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#gallery img{
+	width: 300px;
+	padding: 0 40px 0;
+}
+
+#gallery .item{
+	padding: 15px;
+	float: left;
+}
+
+#gallery .caption{
+	color: #000;
+	background: #f0f0f0;
+	padding: 18px;
+	width: 220px;
+	margin: 0 40px 0;
+}
+
+#gallery .caption p{
+	margin: 0;
+}
+
+#gallery .picture{
+	line-height: 0;
+}
+
+
+/************************ABOUT***************************/
+#about{
+	margin: 160px auto 0 auto;
+	padding: 100px 0 100px 0;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/2.jpg") no-repeat center / cover;
+
+}
+
+.description h1, .description p{
+	color:  #fff;
+}
+
+.description p{
+	font-weight: 600;
+}
+
+
+/************************CONTATTI****************************/
+.info{
+	float: left;
+	width: 70%;
+	margin: 0 100px 0 0;
+}
+
+.info p{
+	margin: 0 0 150px 0;
+}
+
+#contact{
+	margin: 100px 0 0 0;
+}
+
+#contact ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+#contact li{
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+}
+
+#contact .material-icons{
+	float: left;
+}
+
+#contact .contacts a{
+	padding: 3px 0 0 10px;
+	display: inline-block;
+}
+
+/*************************FOOTER****************************/
+footer.main{
+	text-align: center;
+	padding: 15px;
+}
+
+footer .main img{
+	width: 24px;
+}
+
+footer .main a{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+footer .main p{
+	font-size: 1.2rem;
+}
+
+footer .social{
+	padding-top: 300px;
+}
+
+
+/******************************************MEDIA QUERIES***********************/
+
+@media only screen and (min-width: 768px){
+
+#gallery .item {
+	width: 33.3333%;
+
+}
+
+#gallery .item:nth-child(3n + 1){
+	clear: left;
+}
+
+
+ 
+
+
+/*************ABOUT***************/
+
+	#about img{
+		width: 70%;
+	}
+	
+
+    
+}
+
+@media only screen and (min-width: 992px){
+
+	header{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	nav li a:hover, nav li a.active{
+		background: #0d9b75;
+		border-radius: 3px;
+	}
+
+	#gallery .item{
+		transition: opacity 0.3s;
+	}
+
+	#gallery .item:hover{
+		opacity: 0.3;
+	}
+}
+
+
+@media only screen and (max-width: 767px){
+
+    #gallery .item:nth-child(2n + 1){
+			clear: left;
+    }
+}
+
+
+
+
+
+	
+	
+
+
+
+
+
+
